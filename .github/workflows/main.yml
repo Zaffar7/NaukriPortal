@@ -21,7 +21,8 @@ jobs:
         distribution: 'temurin'
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn -B package -f project/pom.xml
+
 
     - name: Upload JAR File
       uses: actions/upload-artifact@v5.0.0
